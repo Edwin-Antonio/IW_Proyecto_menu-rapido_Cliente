@@ -1,0 +1,64 @@
+ion-card-content {
+  text-align: center;
+}
+
+ion-card-title {
+  margin-bottom: 10px;
+}
+
+ion-searchbar {
+  background-color: white;
+}
+
+ion-card {
+  margin: 8px;
+  padding-right: 23px;
+}
+
+span {
+  font-weight: 800;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+}
+
+hr {
+  background-color: white;
+}
+
+ion-chip {
+  padding-left: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+ion-item:first-of-type {
+  margin-top: 0;
+}
+
+ion-list {
+  margin-bottom: 10px;
+}
+
+ion-button {
+  margin-top: 30px;
+}

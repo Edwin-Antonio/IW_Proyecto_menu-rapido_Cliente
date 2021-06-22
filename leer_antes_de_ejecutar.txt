@@ -1,0 +1,8 @@
+Para poder ejecutar correctamente el archivo hay que descargar los siguientes 
+dependencias con los siguientes comandos dentro de la lina de comandos (Ignorar el '$', es solo de referencia):
+
+$ npm install @ionic-native/splash-screen
+$ npm install @ionic-native/status-bar
+$ npm install @ionic-native/core
+$ npm i --save firebase @angular/fire
+$ npm install -g @ionic/cli

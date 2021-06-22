@@ -1,0 +1,31 @@
+<ion-content color="primary" padding>
+  <header>
+    <nav>
+      <div>
+      </div>
+    </nav>
+    <ion-searchbar animated [(ngModel)]="search" (keyup)="filter()" (keydown)="filter()"></ion-searchbar>
+  </header>
+  <section *ngFor="let platillo of platillos" tappable (click)="detail(platillo)">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{platillo.name}}</ion-card-title>
+              <ion-card-subtitle>
+                <ion-chip color="success"><span>$</span>{{platillo.price}}</ion-chip>
+                <ion-chip *ngIf="platillo.price >= 80 && platillo.price < 100" color="warning">Popular</ion-chip>
+                <ion-chip *ngIf="platillo.price <= 60" color="danger">Oferta</ion-chip>
+                <ion-chip *ngIf="platillo.price > 100" color="secondary">Nuevo</ion-chip>
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="{{platillo.image}}" alt="{{platillo.name}}">
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>
