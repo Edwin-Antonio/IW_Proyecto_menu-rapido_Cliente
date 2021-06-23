@@ -1,9 +1,11 @@
 <ion-header [translucent]="true">
-  <ion-toolbar slot="start">
+  <ion-toolbar>
+    <ion-buttons slots="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title>
       Mi Orden
     </ion-title>
-    <ion-back-button default="/"></ion-back-button>
   </ion-toolbar>
 </ion-header>
 
@@ -87,6 +89,8 @@
         </ion-item>
         <ion-button size="large" type="button" [disabled]="!myForm.valid" expand="block" (click)="create()">Enviar
           Orden
+        </ion-button>
+        <ion-button size="large" type="button" routerLink="/tab1" expand="block">Regresar
         </ion-button>
       </ion-card-content>
     </form>
